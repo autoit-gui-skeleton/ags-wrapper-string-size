@@ -1,5 +1,3 @@
-#include-once
-
 ; #INDEX# ============================================================================================================
 ; Title .........: _StringSize
 ; AutoIt Version : v3.2.12.1 or higher
@@ -230,8 +228,7 @@ Func _StringSize($sText, $iSize = 8.5, $iWeight = 400, $iAttrib = 0, $sName = ""
 	If $hLabel Then GUICtrlDelete($hLabel)
 
 	Return $avSize_Info
-
-EndFunc ;==>_StringSize
+EndFunc
 
 ; #INTERNAL_USE_ONLY#============================================================================================================
 ; Name...........: _StringSize_Error_Close
@@ -251,8 +248,7 @@ Func _StringSize_Error_Close($iExtCode, $hDC = 0, $hFont = 0, $hLabel = 0)
 	If $hLabel Then GUICtrlDelete($hLabel)
 
 	Return $iExtCode
-
-EndFunc ;=>_StringSize_Error_Close
+EndFunc
 
 ; #INTERNAL_USE_ONLY#============================================================================================================
 ; Name...........: _StringSize_DefaultFontName
@@ -266,7 +262,6 @@ EndFunc ;=>_StringSize_Error_Close
 ; Remarks .......: This function is used internally by _StringSize
 ; ===============================================================================================================================
 Func _StringSize_DefaultFontName()
-
 	; Get default system font data
 	Local $tNONCLIENTMETRICS = DllStructCreate("uint;int;int;int;int;int;byte[60];int;int;byte[60];int;int;byte[60];byte[60];byte[60]")
 	DLLStructSetData($tNONCLIENTMETRICS, 1, DllStructGetSize($tNONCLIENTMETRICS))
@@ -277,5 +272,4 @@ Func _StringSize_DefaultFontName()
 	Else
 		Return "Tahoma"
 	EndIf
-
-EndFunc ;=>_StringSize_DefaultFontName
+EndFunc

@@ -1,6 +1,6 @@
 {
   "name": "@autoit-gui-skeleton/ags-wrapper-string-size",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "AGS package for the library StringSize.au3, created by Melba23. This library takes a text string and calculates the size of label required to hold it as well as formatting the string to fit.",
   "author": "v20100v <vb20100bv@gmail.com> (https://github.com/v20100v)",
   "contributors": [
